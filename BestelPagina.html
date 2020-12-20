@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css.css">
+<link rel="icon" href="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0010/2009/brand.gif?itok=BKtw9_GY%22%3E">
+<title>Bestel Pagina</title>
+	<Style type='text/css'>body{background-color:rgb(0,0,0);background-image:url(http://www.zingerbugimages.com/backgrounds/pink_starry_sky_glitter_background_seamless.gif);background-position:top left;background-repeat:repeat;background-attachment:fixed;}</Style><!-- background image -->
+
+</head>
+
+<body>
+	<div class="container">
+	<div class="header">
+			<ul>
+				<li><a href="Homepage.html">HomePage</a></li>
+				<li><a href="Back1_Front_pagina/Back1_Pagina.html">Gallerij</a></li>
+				<li><a href="Beroeps_Front_pagina/Beroeps_pagina.html">Bestellen</a></li>
+				<li><a href="Front_Eindoprdacht_Pagina/Front_Pagina.html">Contact</a></li>
+			</ul>
+	</div><!-- header -->
+		<hr>
+	<pre><center>
+	<div class="text">
+	<h1>Hoe het werkt?</h1>
+	<p>U kunt uit verschillende dingen kiezen. Bij thema kunt u zelf een thema bedenken en dan opgeven bij de formulier. 
+	En bij de andere kunt u zelf kiezen welke grootte taart u wilt of de vorm daarvan. 
+	Bij smaak en vulling kun je uit verschillende smaken kiezen.</p>
+	</div>
+	    <div class="form">
+		        <h2>Bestelformulier</h2>
+		        <form action="insert.php" id="formulier" method="post">
+Uw naam:      	  <input type="text" id="Yourname" name="Yourname">
+
+Uw E-mail:        <input type="email" id="email" name="email">
+
+Uw telefoonnummer:<input type="number" id="tel" name="tel">
+
+Datum Benodigd:   <input type="date" id="date" name="date">
+
+Portiegrootte:    <select id="grootte" name="grootte" >
+    					<option value="Dessertmaat">Dessertmaat(2"x1")</option>
+    					<option value="Koffiemaat">Koffiemaat(1"x1")</option>
+    					<option value="Rondetaart" selected>Rondetaart(17,5cm)</option>
+    					<option value="Vierkantentaart">Vierkantentaart(15x15)</option>
+ 				  </select>
+  
+Smaak:            <select id="Smaak" name="Smaak">
+    					<option value="Chocolade">Chocolade</option>
+    					<option value="Rainbouw">Rainbouw</option>
+   						<option value="Vannile">Vannile</option>
+    					<option value="Banaan">Banaan</option>
+						<option value="Aardbei">Aardbei</option>
+  				  </select>
+
+Vulling:          <select id="Vulling" name="Vulling">
+    					<option value="DarkChocolade">DarkChocolade</option>
+    					<option value="WitChocolade">WitChocolade</option>
+   						<option value="MelkChocolade">MelkChocolade</option>
+    					<option value="Buttercream">Buttercream</option>
+						<option value="Ganache">Ganache</option>
+  				  </select>
+
+Thema Cake: 	  <input type="text" name="name" value=" " onblur="AddItem(this);" />
+		<select id="Thema" name="Thema">
+    					<option value="Voetball">Voetball</option>
+    					<option value="Anime">Anime</option>
+   						<option value="Bruilof">Bruilof</option>
+    					<option value="Bloemen">Bloemen</option>
+						<option value="Kpop">Kpop</option>
+  				  </select>
+	<div id="uitvoer"></div>
+<button class="block" onClick="controleer()" value="controle" id="knop">Verzenden</button>
+				 
+	            </form>
+	    </div>
+	</center></pre>
+    <div class="footer">
+        <pre><center>
+        <footer>&copy; Copyright Taartenkoning 2020</footer>
+        </center></pre>
+        </div> <!--footer -->
+	</div> <!-- container -->
+	<script src="Bestelpaginajavas.js"></script>
+</body>
+</html>
